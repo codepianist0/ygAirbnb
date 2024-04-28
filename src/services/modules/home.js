@@ -6,7 +6,37 @@ function getGoodPriceRooms() {
   })
 }
 
+function getGoodScoreRooms() {
+  return ygReqeust.get({
+    url: "/home/highscore"
+  })
+}
+function getDiscountRooms() {
+  return ygReqeust.get({
+    url: "/home/discount"
+  })
+}
+function getRecommendRoos() {
+  return ygReqeust.get({
+    url: "/home/hotrecommenddest"
+  })
+}
+function getLongforRoos() {
+  return ygReqeust.get({
+    url: "/home/longfor"
+  })
+}
+function getPlusRooms() {
+  return ygReqeust.get({
+    url: "/home/plus"
+  })
+}
 
 export {
-  getGoodPriceRooms
+  getGoodPriceRooms,
+  getGoodScoreRooms,
+  getDiscountRooms,
+  getRecommendRoos,
+  getLongforRoos,
+  getPlusRooms
 }

@@ -14,7 +14,7 @@ import { ThemeProvider } from "styled-components"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Suspense fallback="loading">
       <Provider store={store}>
         <BrowserRouter>
@@ -24,5 +24,5 @@ root.render(
         </BrowserRouter>
       </Provider>
     </Suspense>
-  </React.StrictMode>
+  // </React.StrictMode>
 )

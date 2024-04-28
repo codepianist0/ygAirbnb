@@ -3,11 +3,11 @@ import React, { memo } from "react"
 import HeaderWrapper from "./style"
 
 const SectionHeader = memo((props) => {
-  const { title = "", subTitle=false } = props
+  const { title = "", subtitle=false } = props
   return (
     <HeaderWrapper>
       <h2 className="title">{title}</h2>
-      {subTitle && <div className="subtitle">{subTitle}</div>}
+      {subtitle && <div className="subtitle">{subtitle}</div>}
     </HeaderWrapper>
   )
 })
