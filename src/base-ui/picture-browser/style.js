@@ -81,6 +81,10 @@ export const PictureBrowSerWrapper = styled.div`
     .review {
       max-width: 105vh;
       overflow: hidden;
+      .r-info {
+        margin-bottom: 5px;
+        color: #fff
+      }
       .r-imgs {
         width: 100%;
         .r-box {

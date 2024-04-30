@@ -28,6 +28,7 @@ const HeaderWrapper = styled.div`
     transition: all .2s ease;
   }
   .cover {
+    z-index: 999;
     position: absolute;
     width: 100%;
     height: ${window.innerHeight - 80 - 100}px;

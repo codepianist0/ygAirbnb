@@ -26,7 +26,7 @@ const ScrollView = memo((props) => {
     contentRef.current.style.transform = `translate(-${changeWidth}px)`
     setCurrentIndex(newIndex)
     // 2. 判断是否显示
-    setNexIsShow(changeWidth < totalDistanceRef.current) // 如果偏移长度大于溢出长度,就显示
+    setNexIsShow(changeWidth < totalDistanceRef.current) // 如果偏移长度小于溢出长度,就显示
     setPreIsShow(changeWidth > 0)
   }
 

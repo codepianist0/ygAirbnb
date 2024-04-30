@@ -58,8 +58,8 @@ const PictureBrowser = memo((props) => {
       <div className="r-footer">
         <div className="review">
           <div className="r-info">
-            <span>1/30:room</span>
-            <span>apartment图片1</span>
+            <span>{currentIndex}/{pictureUrls.length}:room </span>
+            <span> apartment图片{currentIndex}</span>
           </div>
           <div className="r-imgs">
             <Indicator currentIndex={currentIndex}>

@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useState } from "react"
+import React, { memo, useCallback, useState } from "react"
 import { PictureWrapper } from "./style"
 import { shallowEqual, useSelector } from "react-redux"
 import PictureBrowser from "@/base-ui/picture-browser"
@@ -17,12 +17,7 @@ const DetailPicture = memo(() => {
     isClose ? setIsshow(false): setIsshow(true)
   }, [])
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden"
-    return () => {
-      document.body.style.overflow = "auto"
-    }
-  }, [isShow])
+  document.body.style.overflow = isShow ? "hidden": "auto"
 
   const [clickIndex, setClickIndex] = useState(-1)
   function imgClickHandle(index) {
