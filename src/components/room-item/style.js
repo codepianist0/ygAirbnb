@@ -67,7 +67,7 @@ const ItemWrapper = styled.div`
         &.active {
           width: 9px;
           height: 9px;
-          background-color: ${props => props.theme.color.primaryColor};
+          background-color: #fff;
         }
       }
     }

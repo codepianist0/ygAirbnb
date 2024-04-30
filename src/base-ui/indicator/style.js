@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const IndicatorWrapper = styled.div`
   overflow: hidden;
-  .content {
+  .i-content {
     position: relative;
     display: flex;
     transition: all .2s ease;

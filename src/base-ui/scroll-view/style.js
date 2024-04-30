@@ -9,6 +9,9 @@ const ScrollWrapper = styled.div`
   .scroll-content {
     display: flex;
     transition: all 0.2s ease-in-out;
+    > * {
+      flex-shrink: 0;
+    }
   }
   .arrow {
     position: absolute;

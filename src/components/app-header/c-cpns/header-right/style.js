@@ -12,9 +12,10 @@ const RightWrapper = styled.div`
     .item {
       padding: 12px 15px;
       border-radius: 20px;
+      color: ${(props) => (props.theme.isAlpha ? "#fff" : "#484848")};
       cursor: pointer;
       &:hover {
-        background-color: #f4f4f4;
+        background-color: ${(props) => (props.theme.isAlpha ? "rgba(255, 255, 255, .1)" : "f4f4f4")};
       }
     }
   }
@@ -27,8 +28,9 @@ const RightWrapper = styled.div`
     border: 1px solid #ccc;
     border-radius: 20px;
     cursor: pointer;
-    
-    ${props => props.theme.mixin.boxShadow};
+    background-color: ${(props) => (props.theme.isAlpha ? "#fff" : "rgba(0,0,0,0)")};
+
+    ${(props) => props.theme.mixin.boxShadow};
     .panel {
       position: absolute;
       display: flex;
@@ -39,9 +41,9 @@ const RightWrapper = styled.div`
       background-color: #fff;
       border: 1px solid #f3f3f3;
       border-radius: 20px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
       color: #666;
-      .top {
+      .p-top {
         padding: 10px 0;
         border-bottom: 1px solid #ddd;
       }

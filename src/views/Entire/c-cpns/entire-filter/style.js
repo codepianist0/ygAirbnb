@@ -1,11 +1,17 @@
 import styled from "styled-components"
 
 const FilterWrapper = styled.div`
+  position: fixed;
+  z-index: 99;
+  top: 80px;
   display: flex;
   align-items: center;
   padding-left: 16px;
+  width: 100%;
   height: 48px;
   border-bottom: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  background-color: #fff;
   .filter-content {
     display: flex;
     .filter-item {

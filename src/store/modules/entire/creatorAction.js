@@ -21,7 +21,7 @@ export const changeLoadingAction = (isLoading) => ({
   isLoading
 })
 
-export const fetchEntireInfoAction = (offset, currentPage) => {
+export const fetchEntireInfoAction = (offset, currentPage = 1) => {
   return async (dispatch, getState) => {
     dispatch(changeCurrentPageAction(currentPage))
     dispatch(changeLoadingAction(true)) 

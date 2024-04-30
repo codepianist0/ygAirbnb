@@ -1,6 +1,7 @@
 import React, { memo, useEffect } from "react"
 import HomeWrapper from "./style"
 import HomeBanner from "./c-cpns/home-banner"
+import { changeHeaderConfigAction } from '@/store/modules/main'
 import { fetchHomeDataAction } from "@/store/modules/home"
 import { shallowEqual, useDispatch, useSelector } from "react-redux"
 import { isEmptyObj } from "@/utils"
@@ -14,6 +15,7 @@ const Home = memo(() => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(fetchHomeDataAction())
+    dispatch(changeHeaderConfigAction({ isFixed: true, topAlpha: true }))
   }, [dispatch])
 
   // get Info

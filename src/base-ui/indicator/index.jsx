@@ -30,7 +30,7 @@ const Indicator = memo((props) => {
 
   return (
     <IndicatorWrapper>
-      <div className="content" ref={contentRef}>
+      <div className="i-content" ref={contentRef}>
         {props.children}
       </div>
     </IndicatorWrapper>

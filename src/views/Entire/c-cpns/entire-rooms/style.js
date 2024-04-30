@@ -4,7 +4,7 @@ const RoomsWrapper = styled.div`
   position: relative;
   padding: 30px 20px;
   .title {
-    padding-left: 5px;
+    padding-left: 8px;
     font-size: 22px;
     color: ${(props) => props.theme.text.secondColor};
   }
